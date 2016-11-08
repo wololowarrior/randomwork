@@ -1,0 +1,111 @@
+body{
+    background-image: url('../images/img2.jpg');
+    background-size: cover;
+    font-family: "Raleway",Helvitica;
+}
+h1 {
+    height: 100px;
+    width: 100%;
+    font-size: 28px;
+    background: #18aa8d;
+    color: white;
+    line-height: 150%;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    box-sizing: border-box;
+    width: 260px;
+    margin: 100px auto 0;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    padding-bottom: 40px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+form h1 {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+input {
+    margin: 40px 25px;
+    width: 200px;
+    display: block;
+    border: none;
+    padding: 10px 0;
+    border-bottom: solid 1px #1abc9c;
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    transition: all 0.3s cubic-bezier(.4,.5,.3,.5);
+    
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+    background-position: -200px 0;
+    background-size: 200px 100%;
+    background-repeat: no-repeat;
+    color: #0e6252;
+}
+input::-webkit-input-placeholder{
+    font-size: 16px;
+/*    -webkit-animation-name:textit;
+    -webkit-animation-duration: 1s;*/
+    transition: transform 0.5s cubic-bezier(0.64, 0.09, 0.64, 0.09 );
+    -moz-transition: transform 0.3s cubic-bezier(0.64, 0.09, 0.08, 1 );
+}
+input:focus, input:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+}
+input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+    color: #1abc9c;
+    opacity: 1;
+    font-size: 11px;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    visibility: visible !important;
+}
+/*input:focus::-moz-input-placeholder, input:-moz-valid::input-placeholder {
+    color: #1abc9c;
+    font-size: 11px;
+    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
+    visibility: visible !important;
+}*/
+@-webkit-keyframe textit{
+    from{font-size:11px};
+    to {font-size:16px};
+}
+
+button {
+    border: none;
+    background: #1abc9c;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 6px;
+    width: 200px;
+    color: white;
+    margin-left: 25px;
+    transition: all linear 0.2s;
+    /*  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);*/
+}
+button:hover {
+
+    background: #23b2a6;
+}
+button:focus{
+    outline: 0;
+}
+
+#signup{
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+#signup:hover{
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2); 
+}
